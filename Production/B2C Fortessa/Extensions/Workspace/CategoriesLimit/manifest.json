@@ -1,0 +1,60 @@
+{
+	"name": "CategoriesLimit",
+	"fantasyName": "CategoriesLimit",
+	"vendor": "MHI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": []
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/CategoriesLimit.Shopping.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/CategoriesLimit.Shopping.js",
+					"Modules/Main/JavaScript/CategoriesLimit.Facets.Browse.View.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Main/SuiteScript/CategoriesLimit.js",
+		"files": [
+			"Modules/Main/SuiteScript/CategoriesLimit.js",
+			"Modules/Main/SuiteScript/CategoriesLimit.Model.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MHI/CategoriesLimit@1.0.0",
+	"activation_id": "7",
+	"extension_id": "3001"
+}

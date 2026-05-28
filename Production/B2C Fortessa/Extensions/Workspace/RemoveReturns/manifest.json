@@ -1,0 +1,48 @@
+{
+	"name": "RemoveReturns",
+	"fantasyName": "Remove Returns",
+	"vendor": "MHI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.2",
+	"description": "Remove Returns feature from My Account",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/RemoveReturns/JavaScript/RemoveReturns.Shopping.EntryPoint.js",
+			"myaccount": "Modules/RemoveReturns/JavaScript/RemoveReturns.MyAccount.EntryPoint.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/RemoveReturns/JavaScript/RemoveReturns.Shopping.EntryPoint.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/RemoveReturns/JavaScript/RemoveReturns.MyAccount.EntryPoint.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MHI/RemoveReturns@1.0.2",
+	"activation_id": "7",
+	"extension_id": "7901"
+}

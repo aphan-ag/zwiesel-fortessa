@@ -1,0 +1,22 @@
+.bxslider li {
+    text-align: center;
+}
+
+.video-thumbnail {
+    background-color: rgba(0,0,0,0.7);
+    position: relative;
+    width: $sc-padding-lv1*10;
+    height: $sc-padding-lv1*10;
+
+    &>i {
+        @extend .fa;
+        @extend %fa-youtube-play;
+        font-size: $sc-navigation-icon-size;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+}

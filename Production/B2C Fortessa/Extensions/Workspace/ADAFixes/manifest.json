@@ -1,0 +1,73 @@
+{
+	"name": "ADAFixes",
+	"fantasyName": "ADA Fixes",
+	"vendor": "MHI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.1",
+	"description": "Fixes for ADA",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ADAFixes/Template/ada_sc-threads-logo.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/ADAFixes/Template/ada_sc-threads-logo.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/ADAFixes/Template/ada_sc-threads-logo.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/ADAFixes/JavaScript/ADAFixes.EntryPoint.js",
+			"myaccount": "Modules/ADAFixes/JavaScript/ADAFixes.EntryPoint.js",
+			"checkout": "Modules/ADAFixes/JavaScript/ADAFixes.EntryPoint.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/ADAFixes/JavaScript/ADAFixes.EntryPoint.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/ADAFixes/JavaScript/ADAFixes.EntryPoint.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/ADAFixes/JavaScript/ADAFixes.EntryPoint.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MHI/ADAFixes@1.0.1",
+	"activation_id": "7",
+	"extension_id": "7501"
+}

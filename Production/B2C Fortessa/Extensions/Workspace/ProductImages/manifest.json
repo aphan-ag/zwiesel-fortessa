@@ -1,0 +1,63 @@
+{
+	"name": "ProductImages",
+	"fantasyName": "Product Images",
+	"vendor": "MHI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=19.1.0",
+		"SCS": ">=19.1.0"
+	},
+	"version": "1.0.1",
+	"description": "Images customization for website",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/ProductImages.Shopping.js",
+			"myaccount": "Modules/Main/JavaScript/ProductImages.MyAccount.js",
+			"checkout": "Modules/Main/JavaScript/ProductImages.Checkout.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/ProductImages.Item.Model.js",
+					"Modules/Main/JavaScript/ProductImages.Shopping.js",
+					"Modules/Main/JavaScript/ProductImages.Item.KeyMapping.js",
+					"Modules/Main/JavaScript/ProductImages.ProductModel.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/JavaScript/ProductImages.Item.Model.js",
+					"Modules/Main/JavaScript/ProductImages.MyAccount.js",
+					"Modules/Main/JavaScript/ProductImages.Item.KeyMapping.js",
+					"Modules/Main/JavaScript/ProductImages.ProductModel.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Main/JavaScript/ProductImages.Checkout.js",
+					"Modules/Main/JavaScript/ProductImages.Item.Model.js",
+					"Modules/Main/JavaScript/ProductImages.Item.KeyMapping.js",
+					"Modules/Main/JavaScript/ProductImages.ProductModel.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MHI/ProductImages@1.0.1",
+	"activation_id": "7",
+	"extension_id": "6301"
+}

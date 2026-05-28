@@ -1,0 +1,52 @@
+{
+	"name": "ExternalCSS",
+	"fantasyName": "External CSS",
+	"vendor": "ACS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Allows external CSS files to be referenced by the application",
+	"assets": {},
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/ExternalCSS.json"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/NSeComm.ExternalCSS.Shopping.js",
+			"myaccount": "Modules/Main/JavaScript/NSeComm.ExternalCSS.MyAccount.js",
+			"checkout": "Modules/Main/JavaScript/NSeComm.ExternalCSS.Checkout.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/NSeComm.ExternalCSS.Checkout.js",
+					"Modules/Main/JavaScript/NSeComm.ExternalCSS.MyAccount.js",
+					"Modules/Main/JavaScript/NSeComm.ExternalCSS.Shopping.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/JavaScript/NSeComm.ExternalCSS.Checkout.js",
+					"Modules/Main/JavaScript/NSeComm.ExternalCSS.MyAccount.js",
+					"Modules/Main/JavaScript/NSeComm.ExternalCSS.Shopping.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Main/JavaScript/NSeComm.ExternalCSS.Checkout.js",
+					"Modules/Main/JavaScript/NSeComm.ExternalCSS.MyAccount.js",
+					"Modules/Main/JavaScript/NSeComm.ExternalCSS.Shopping.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ACS/ExternalCSS@1.0.0",
+	"activation_id": "7",
+	"extension_id": "16601"
+}

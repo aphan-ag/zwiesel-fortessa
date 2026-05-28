@@ -1,0 +1,19 @@
+{
+    "type": "object",
+	"subtab": {
+		"id": "pdpSubtab",
+		"group": "extensions",
+		"title": "Product details page",
+		"description": "Additional settings for the product detail page."
+	},
+    "properties": { 
+        "VideoOnPDPGallery.position": {
+            "group": "extensions",
+            "subtab": "pdpSubtab",
+            "type": "number",
+            "title": "Video Gallery Position",
+            "description": "The position in which the video should appear in the gallery. (Initial position is 0).",
+            "default": "0"
+        }
+    }
+}

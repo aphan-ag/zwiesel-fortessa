@@ -1,0 +1,56 @@
+{
+	"name": "SOIPAddress",
+	"fantasyName": "SO IP Address Population ",
+	"vendor": "MHI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Populate SO with IP Address",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/Main/Templates/mhi_soipaddress_main.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/Main/JavaScript/MHI.SOIPAddress.Main.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/Main/JavaScript/MHI.SOIPAddress.Main.js",
+					"Modules/Main/JavaScript/Main.View.js",
+					"Modules/Main/JavaScript/MHI.SOIPAddress.Model.js",
+					"Modules/Main/JavaScript/OrderWizard.Module.Confirmation.Ext.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/Main/SuiteScript2/MHI.SOIPAddress.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MHI/SOIPAddress@1.0.0",
+	"activation_id": "7",
+	"extension_id": "8601"
+}

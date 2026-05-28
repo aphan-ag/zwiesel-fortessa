@@ -1,0 +1,55 @@
+{
+	"name": "LoginMessage",
+	"fantasyName": "Login Message",
+	"vendor": "MHI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.2",
+	"description": "Adds a message in the login page",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/LoginMessage/Configuration/LoginMessage.json"
+		]
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/LoginMessage/Sass/_loginmessage.scss"
+		},
+		"files": [
+			"Modules/LoginMessage/Sass/_loginmessage.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/LoginMessage/JavaScript/LoginMessage.EntryPoint.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/LoginMessage/JavaScript/LoginMessage.EntryPoint.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MHI/LoginMessage@1.0.2",
+	"activation_id": "7",
+	"extension_id": "3603"
+}

@@ -1,0 +1,81 @@
+{
+	"name": "Newsletter",
+	"fantasyName": "Newsletter",
+	"vendor": "MHI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=19.1.0",
+		"SCS": ">=19.1.0"
+	},
+	"version": "1.0.1",
+	"description": "Newsletter changes for B2C",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/Templates/newsletter_extension.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/Templates/newsletter_extension.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Main/Templates/newsletter_extension.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/Javascript/Newsletter.Shopping.Entry.js",
+			"myaccount": "Modules/Main/Javascript/Newsletter.Shopping.Entry.js",
+			"checkout": "Modules/Main/Javascript/Newsletter.Shopping.Entry.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/Javascript/Newsletter.Shopping.Entry.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/Javascript/Newsletter.Shopping.Entry.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Main/Javascript/Newsletter.Shopping.Entry.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Main/SuiteScript/Newsletter.Entry.js",
+		"files": [
+			"Modules/Main/SuiteScript/Newsletter.Entry.js",
+			"Modules/Main/SuiteScript/Newsletter.Model.Extension.js",
+			"Modules/Main/SuiteScript/Newsletter.ServiceController.Extension.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MHI/Newsletter@1.0.1",
+	"activation_id": "7",
+	"extension_id": "6701"
+}

@@ -1,0 +1,28 @@
+{
+	"name": "RemoveProductReviews",
+	"fantasyName": "Remove Product Reviews",
+	"vendor": "MyersHolum",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=20.1",
+		"SCS": ">=20.1"
+	},
+	"version": "1.0.0",
+	"description": "Removes the product reviews functionality from the website.",
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/RemoveProductReviews/JavaScript/RemoveProductReviews.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/RemoveProductReviews/JavaScript/RemoveProductReviews.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MyersHolum/RemoveProductReviews@1.0.0",
+	"activation_id": "7",
+	"extension_id": "501"
+}

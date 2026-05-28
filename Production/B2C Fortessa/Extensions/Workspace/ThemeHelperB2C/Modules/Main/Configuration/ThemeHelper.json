@@ -1,0 +1,59 @@
+{
+    "type": "object",
+	"subtab": {
+		"id": "themeHelper",
+		"group": "extensions",
+		"title": "Theme Helper",
+		"description": "Additional settings for the theme helper."
+	},
+    "properties": { 
+        "themeHelper.headerBannerTitle": {
+            "group": "extensions",
+            "subtab": "themeHelper",
+            "type": "string",
+            "title": "Header Banner Title",
+            "description": "The title for the header banner.",
+            "default": "YOU ARE SHOPPING FOR:"
+        }, 
+        "themeHelper.headerBannerNavItems": {
+            "group": "extensions",
+            "subtab": "themeHelper",
+            "type": "array",
+            "title": "Header Banner Navigation Items",
+            "description": "A list of navigable items (links and titles) for the header banner.",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "title": "Navigation Item Title",
+                        "description": "The display text for the navigation item."
+                    },
+                    "link": {
+                        "type": "string",
+                        "title": "Navigation Item Link",
+                        "description": "The URL for the navigation item."
+                    },
+                    "active": {
+                        "type": "boolean",
+                        "title": "Active",
+                        "description": "Mark this navigation item as the default active item."
+                    }
+                },
+                "required": ["title", "link"]
+            },
+            "default": [
+                {
+                    "title": "HOME",
+                    "link": "#",
+                    "active": true
+                },
+                {
+                    "title": "BUSINESS",
+                    "link": "https://myaccount.zwieselfortessa.us/",
+                    "active": false
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+	"name": "UOMCustomizationB2C",
+	"fantasyName": "UOM Customization - B2C",
+	"vendor": "Plative",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "B2C Extension for UOM Customization",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/UOMCustomization/Sass/UOM.Price.Style.scss",
+			"myaccount": "Modules/UOMCustomization/Sass/UOM.Price.Style.scss",
+			"checkout": "Modules/UOMCustomization/Sass/UOM.Price.Style.scss"
+		},
+		"files": [
+			"Modules/UOMCustomization/Sass/UOM.Price.Style.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/UOMCustomization/JavaScript/UOM.Price.EntryPoint.js",
+			"myaccount": "Modules/UOMCustomization/JavaScript/UOM.Price.MyAccount.EntryPoint.js",
+			"checkout": "Modules/UOMCustomization/JavaScript/UOM.Price.EntryPoint.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/UOMCustomization/JavaScript/UOM.Price.EntryPoint.js",
+					"Modules/UOMCustomization/JavaScript/UOM.Price.Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/UOMCustomization/JavaScript/UOM.Price.EntryPoint.js",
+					"Modules/UOMCustomization/JavaScript/UOM.Price.Model.js",
+					"Modules/UOMCustomization/JavaScript/UOM.Price.MyAccount.EntryPoint.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/UOMCustomization/JavaScript/UOM.Price.EntryPoint.js",
+					"Modules/UOMCustomization/JavaScript/UOM.Price.Model.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/UOMCustomization/SuiteScript2/UOM.Price.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Plative/UOMCustomizationB2C@1.0.0",
+	"activation_id": "7",
+	"extension_id": "15105"
+}

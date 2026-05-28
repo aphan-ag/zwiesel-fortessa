@@ -1,0 +1,42 @@
+{
+	"name": "RemoveWishlist",
+	"fantasyName": "Remove Wishlist",
+	"vendor": "MHI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=22.2.0",
+		"SCS": ">=22.2.0"
+	},
+	"version": "1.0.0",
+	"description": "Remove wishlist in PDP",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/RemoveWishlist/JavaScript/MHI.RemoveWishlist.RemoveWishlist.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/RemoveWishlist/JavaScript/MHI.RemoveWishlist.RemoveWishlist.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MHI/RemoveWishlist@1.0.0",
+	"activation_id": "7",
+	"extension_id": "10701"
+}

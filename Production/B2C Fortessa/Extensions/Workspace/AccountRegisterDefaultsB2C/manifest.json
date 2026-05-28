@@ -1,0 +1,46 @@
+{
+	"name": "AccountRegisterDefaultsB2C",
+	"fantasyName": "AccountRegisterDefaults B2C",
+	"vendor": "MHI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=19.1.0",
+		"SCS": ">=19.1.0"
+	},
+	"version": "1.0.2",
+	"description": "Set defaults values when creating an account - B2C",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": []
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Main/SuiteScript/AccountRegisterDefaults.Entry.js",
+		"files": [
+			"Modules/Main/SuiteScript/AccountRegisterDefaults.Entry.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MHI/AccountRegisterDefaultsB2C@1.0.2",
+	"activation_id": "7",
+	"extension_id": "4701"
+}

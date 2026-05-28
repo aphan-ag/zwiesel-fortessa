@@ -1,0 +1,64 @@
+{
+	"name": "ItemSearcher",
+	"fantasyName": "ADA Fixes on ItemSearcher",
+	"vendor": "MHI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.1",
+	"description": "Fixes for ADA on ItemSearcher",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/Templates/itemssearcher_ext.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/Templates/itemssearcher_ext.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/Javascript/ItemSearcher.EntryPoint.js",
+			"myaccount": "Modules/Main/Javascript/ItemSearcher.EntryPoint.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/Javascript/ItemSearcher.EntryPoint.js",
+					"Modules/Main/Javascript/ItemSearcher.View.Ext.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/Javascript/ItemSearcher.EntryPoint.js",
+					"Modules/Main/Javascript/ItemSearcher.View.Ext.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MHI/ItemSearcher@1.0.1",
+	"activation_id": "7",
+	"extension_id": "7601"
+}

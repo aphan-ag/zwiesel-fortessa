@@ -1,0 +1,41 @@
+{
+	"name": "VideoOnPDPGallery",
+	"fantasyName": "Video on PDP Gallery",
+	"vendor": "MyersHolum",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=19.1.0",
+		"SCS": ">=19.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Adds a video at the start of the PDP gallery.",
+	"configuration": {
+		"files": [
+			"Modules/VideoOnPDPGallery/Configuration/VideoOnPDPGallery.json"
+		]
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/VideoOnPDPGallery/Sass/_video-gallery.scss"
+		},
+		"files": [
+			"Modules/VideoOnPDPGallery/Sass/_video-gallery.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/VideoOnPDPGallery/JavaScript/VideoOnPDPGallery.EntryPoint.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/VideoOnPDPGallery/JavaScript/VideoOnPDPGallery.EntryPoint.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MyersHolum/VideoOnPDPGallery@1.0.0",
+	"activation_id": "7",
+	"extension_id": "1201"
+}

@@ -1,0 +1,62 @@
+{
+	"name": "ProgressiveForms",
+	"fantasyName": "Progressive Forms",
+	"vendor": "MHI",
+	"type": "extension",
+	"target": "SCS,SCA",
+	"target_version": {
+		"SCS": ">=21.1.0",
+		"SCA": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Progressive forms on Checkout Page",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/ProgressiveForms/Templates/progressiveforms.tpl",
+					"Modules/ProgressiveForms/Templates/progressive.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/ProgressiveForms/Sass/_progressiveforms.scss"
+		},
+		"files": [
+			"Modules/ProgressiveForms/Sass/_progressiveforms.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/ProgressiveForms/JavaScript/ProgressiveForms.EntryPoint.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/ProgressiveForms/JavaScript/ProgressiveForms.View.js",
+					"Modules/ProgressiveForms/JavaScript/ProgressiveForms.EntryPoint.js",
+					"Modules/ProgressiveForms/JavaScript/ProgressiveForms.Validator.View.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MHI/ProgressiveForms@1.0.0",
+	"activation_id": "7",
+	"extension_id": "3101"
+}

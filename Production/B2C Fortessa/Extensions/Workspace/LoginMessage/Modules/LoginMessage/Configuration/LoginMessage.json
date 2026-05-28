@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "subtab": {
+    "id": "loginMessage",
+    "group": "myAccountApp",
+    "title": "Login Message",
+    "description": "Login Message configuration."
+  },
+  "properties": {
+    "loginMessage.message": {
+      "group": "myAccountApp",
+      "subtab": "loginMessage",
+      "type": "string",
+      "nsType": "textarea",
+      "title": "Login Message",
+      "description": "Enter the message that will show on the login screen. To disable the message, simply clear this field.",
+      "default": "<div>We have updated our WebSite, if you have not already, please <a data-action=\"forgot-password\" href=\"/forgot-password\">update your password</a></div>"
+    }
+  }
+}

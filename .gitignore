@@ -1,0 +1,39 @@
+# vs code
+.vscode/
+
+# macOS
+.DS_Store
+
+# environment variables
+.env
+
+## SUITECOMMERCE ##
+
+# SC SRC
+**/Denali
+**/Kilimanjaro
+**/Mont Blanc
+**/Vinson
+**/2018.0 Source Code
+**/2018.1 Source Code
+**/2018.2 Source Code
+**/2019.0 Source Code
+**/2019.1 Source Code
+**/2019.2 Source Code
+**/2020.1 Source Code
+**/2021.0 Source Code
+**/2021.1 Source Code
+**/2021.2 Source Code
+**/2022.0 Source Code
+**/2022.1 Source Code
+**/2022.2 Source Code
+**/2023.0 Source Code
+**/2023.1 Source Code
+**/2023.2 Source Code
+**/2024.0 Source Code
+**/2024.1 Source Code
+**/2024.2 Source Code
+**/2025.0 Source Code
+**/2025.1 Source Code
+**/2025.2 Source Code
+

@@ -1,0 +1,7 @@
+# Ignore all files except non-Extras Workspace and gitignore for SuiteComm
+/*
+!.gitignore
+
+!Workspace/
+Workspace/Extras
+Workspace/Blog

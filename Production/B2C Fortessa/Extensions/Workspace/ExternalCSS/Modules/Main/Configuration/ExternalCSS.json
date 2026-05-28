@@ -1,0 +1,32 @@
+{
+    "type": "object",
+    "subtab": {
+        "id": "externalcss",
+        "group": "extensions",
+        "title": "External CSS",
+        "description": "Allows site to use CSS files from file cabinet."
+    },
+    "properties": {
+        "externalcss.shoppingCss": {
+            "group": "extensions",
+            "subtab": "externalcss",
+            "type": "string",
+            "title": "Shopping CSS",
+            "description": "Sets the CSS file to be loaded for Shopping"
+        },
+        "externalcss.myaccountCss": {
+            "group": "extensions",
+            "subtab": "externalcss",
+            "type": "string",
+            "title": "My Account CSS",
+            "description": "Sets the CSS file to be loaded for My Account"
+        },
+        "externalcss.checkoutCss": {
+            "group": "extensions",
+            "subtab": "externalcss",
+            "type": "string",
+            "title": "Checkout CSS",
+            "description": "Sets the CSS file to be loaded for Checkout"
+        }
+    }
+}

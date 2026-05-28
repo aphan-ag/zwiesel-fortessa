@@ -1,0 +1,54 @@
+.header-simplified-header-logo .header-logo-image,
+.header-logo-image {
+    width: initial;
+}
+
+@media (max-width: 992px) {
+  .fixed-header-mobile .shopping-layout-header .header-sidebar-toggle, 
+  .fixed-header-mobile .myaccount-layout-header .header-sidebar-toggle,
+  .fixed-header-mobile .shopping-layout-header .header-mini-cart-menu-cart-link,
+  .fixed-header-mobile .myaccount-layout-header .header-mini-cart-menu-cart-link {
+      position: relative !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-sidebar-toggle-wrapper {
+    align-items: center;
+  }
+  .header-right-menu {
+    align-self: center;
+  }
+}
+
+@media (max-width: 990px) {
+  .header-sidebar-toggle-wrapper {
+    float: none;
+    position: absolute;
+    height: 85%;
+    top: 0;
+    display: flex;
+  }
+  .header-sidebar-toggle .invisible {
+    display: none;
+  }
+  .header-main-nav {
+      position: relative;
+  }
+  .header-content {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 45px;
+      padding-bottom: 5px;
+  }
+  .header-right-menu {
+      margin-right: -8px;
+      margin-left: 10px;
+  }
+  .header-logo {
+      padding-top: 10px !important;
+  }
+  .header-logo-image {
+      max-width: 100%;
+  }
+}

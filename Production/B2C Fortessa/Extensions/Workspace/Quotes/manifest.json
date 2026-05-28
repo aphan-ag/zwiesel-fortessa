@@ -1,0 +1,47 @@
+{
+	"name": "Quotes",
+	"fantasyName": "Quotes",
+	"vendor": "MHI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.0",
+	"description": "Quotes Fixes",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": []
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Main/SuiteScript/Quotes.SSP.js",
+		"files": [
+			"Modules/Main/SuiteScript/Quotes.SSP.js",
+			"Modules/Main/SuiteScript/ProductList.Item.Model.Extension.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MHI/Quotes@1.0.0",
+	"activation_id": "7",
+	"extension_id": "5301"
+}

@@ -1,0 +1,26 @@
+.progressive-forms-billaddress{
+	display: none;
+}
+.progressiveforms-info-card{
+	height: 60px;
+}
+.order-wizard-progressive-button-continue{
+	@extend .button-primary;
+    @extend .button-medium;
+	@extend .pull-right;
+	margin: 10px 0;
+}
+.order-wizard-step-content-wrapper{
+	.order-wizard-title{
+		display: none;
+	}
+}
+.order-wizard-paymentmethod-giftcertificates-module{
+	margin-bottom: 0 !important;
+}
+.progressive-containerHIDDEN{
+	display: none;
+}
+.stepHidden, .order-wizard-showshipments-module-shipping-details-method{
+	display: none;
+}

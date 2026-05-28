@@ -1,0 +1,43 @@
+{
+	"name": "PaymentMethods",
+	"fantasyName": "Payment Methods",
+	"vendor": "MHI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=20.1",
+		"SCS": ">=20.1"
+	},
+	"version": "1.0.2",
+	"description": "Updates the payment methods available",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/Main/JavaScript/PaymentMethods.Checkout.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/Main/JavaScript/PaymentMethods.Checkout.js",
+					"Modules/Main/JavaScript/OrderWizard.Module.PaymentMethod.Selector.Extension.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MHI/PaymentMethods@1.0.2",
+	"activation_id": "7",
+	"extension_id": "5101"
+}

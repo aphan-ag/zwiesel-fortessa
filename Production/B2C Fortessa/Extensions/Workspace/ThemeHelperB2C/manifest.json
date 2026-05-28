@@ -1,0 +1,100 @@
+{
+	"name": "ThemeHelperB2C",
+	"fantasyName": "Theme Helper B2C",
+	"vendor": "Plative",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "This extension enhances and extends the selected theme to add specific functionality",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Main/Configuration/ThemeHelper.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/Templates/header_theme_helper.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/Templates/header_theme_helper.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Main/Templates/header_theme_helper.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_theme-helper-main.scss",
+			"myaccount": "Modules/Main/Sass/_theme-helper-main.scss",
+			"checkout": "Modules/Main/Sass/_theme-helper-main.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_theme-helper-main.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/Plative.ThemeHelper.Shopping.js",
+			"myaccount": "Modules/Main/JavaScript/Plative.ThemeHelper.MyAccount.js",
+			"checkout": "Modules/Main/JavaScript/Plative.ThemeHelper.Checkout.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/Header.View.ThemeHelper.js",
+					"Modules/Main/JavaScript/Plative.ThemeHelper.Checkout.js",
+					"Modules/Main/JavaScript/Plative.ThemeHelper.Global.js",
+					"Modules/Main/JavaScript/Plative.ThemeHelper.MyAccount.js",
+					"Modules/Main/JavaScript/Plative.ThemeHelper.Shopping.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/JavaScript/Header.View.ThemeHelper.js",
+					"Modules/Main/JavaScript/Plative.ThemeHelper.Checkout.js",
+					"Modules/Main/JavaScript/Plative.ThemeHelper.Global.js",
+					"Modules/Main/JavaScript/Plative.ThemeHelper.MyAccount.js",
+					"Modules/Main/JavaScript/Plative.ThemeHelper.Shopping.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Main/JavaScript/Header.View.ThemeHelper.js",
+					"Modules/Main/JavaScript/Plative.ThemeHelper.Checkout.js",
+					"Modules/Main/JavaScript/Plative.ThemeHelper.Global.js",
+					"Modules/Main/JavaScript/Plative.ThemeHelper.MyAccount.js",
+					"Modules/Main/JavaScript/Plative.ThemeHelper.Shopping.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Plative/ThemeHelperB2C@1.0.0",
+	"activation_id": "7",
+	"extension_id": "16501"
+}

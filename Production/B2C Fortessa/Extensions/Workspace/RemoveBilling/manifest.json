@@ -1,0 +1,57 @@
+{
+	"name": "RemoveBilling",
+	"fantasyName": "Remove Billing",
+	"vendor": "MHI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=21.1.0",
+		"SCS": ">=21.1.0"
+	},
+	"version": "1.0.2",
+	"description": "Remove Billing feature from My Account",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/RemoveBilling/Sass/_removebilling.scss",
+			"myaccount": "Modules/RemoveBilling/Sass/_removebilling.scss"
+		},
+		"files": [
+			"Modules/RemoveBilling/Sass/_removebilling.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/RemoveBilling/JavaScript/RemoveBilling.EntryPoint.js",
+			"myaccount": "Modules/RemoveBilling/JavaScript/RemoveBilling.EntryPoint.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/RemoveBilling/JavaScript/RemoveBilling.EntryPoint.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/RemoveBilling/JavaScript/RemoveBilling.EntryPoint.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MHI/RemoveBilling@1.0.2",
+	"activation_id": "7",
+	"extension_id": "6801"
+}

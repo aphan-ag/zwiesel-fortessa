@@ -1,0 +1,71 @@
+{
+	"name": "StockRestrictions",
+	"fantasyName": "Stock Restrictions",
+	"vendor": "MHI",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": ">=19.1.0",
+		"SCS": ">=19.1.0"
+	},
+	"version": "1.0.5",
+	"description": "Stock Restrictions in the website",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/Main/Sass/_stock-restrictions.scss",
+			"myaccount": "Modules/Main/Sass/_stock-restrictions.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_stock-restrictions.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/MHI.StockRestrictions.ShoppingApplication.js",
+			"myaccount": "Modules/Main/JavaScript/MHI.StockRestrictions.MyAccountApplication.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/MHI.StockRestrictions.ShoppingApplication.js",
+					"Modules/Main/JavaScript/Cart.AddToCart.Button.View.Extension.js",
+					"Modules/Main/JavaScript/QuickAdd.View.Extension.js",
+					"Modules/Main/JavaScript/Product.Model.Extension.js",
+					"Modules/Main/JavaScript/Facets.ItemCell.View.Extension.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/JavaScript/MHI.StockRestrictions.MyAccountApplication.js",
+					"Modules/Main/JavaScript/QuickAdd.View.Extension.js",
+					"Modules/Main/JavaScript/Product.Model.Extension.js",
+					"Modules/Main/JavaScript/Facets.ItemCell.View.Extension.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Main/SuiteScript/StockRestrictions.Entry.js",
+		"files": [
+			"Modules/Main/SuiteScript/StockRestrictions.Entry.js",
+			"Modules/Main/SuiteScript/StockRestrictions.Model.js"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/MHI/StockRestrictions@1.0.5",
+	"activation_id": "7",
+	"extension_id": "8901"
+}

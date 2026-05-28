@@ -1,0 +1,15 @@
+.menu-tree-node-submenu{
+    .menu-tree-node{
+        .menu-tree-node-item-anchor[data-id='quotes']{
+            display: none;
+            visibility: hidden;
+        }
+    }
+}
+
+div.product-details-full-actions-addtoquote,
+div.product-details-quickview-actions-container-add-to-quote{
+  &[data-view="ProductDetails.AddToQuote"] {
+    display: none;
+  }
+}

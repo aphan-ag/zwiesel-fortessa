@@ -1,0 +1,23 @@
+.pla-uom-cart-line {
+	@extend .product-views-option-tile-label;
+	margin-bottom: 0px;
+	margin-top: 10px;
+	&::after {
+		content: none;
+	}
+}
+
+.uom-product-views-option-tile-label-checkout {
+	@extend .product-views-option-tile-label;
+	margin-bottom: 0px;
+	font-weight: small;
+	font-size: medium;
+	margin-top: 10px;
+	&::after {
+		content: none;
+	}
+}
+
+.uom-product-views-option-tile-label-pdp {
+	@extend .product-views-option-tile-label;
+}
